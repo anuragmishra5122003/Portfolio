@@ -2118,3 +2118,173 @@ mask-composite: exclude;
   background: var(--accent-purple);
   transform: translateY(-3px);
 }
+/* ========== MOBILE FIXES ========== */
+@media (max-width: 480px) {
+
+  /* General */
+  .container {
+    padding: 0 16px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  /* Hero fix */
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 20px;
+  }
+
+  .hero-left {
+    order: 1;
+    align-items: flex-start;
+  }
+
+  .hero-right {
+    order: 2;
+    width: 100%;
+  }
+
+  .id-card-wrapper {
+    transform: scale(0.85);
+    transform-origin: top center;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-roles {
+    font-size: 0.9rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btns .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Skills fix */
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .skill-category-wide {
+    grid-column: span 1 !important;
+  }
+
+  .skill-category {
+    padding: 20px;
+  }
+
+  .skill-items {
+    gap: 8px;
+  }
+
+  .skill-item {
+    font-size: 0.68rem;
+    padding: 5px 10px;
+  }
+
+  /* Projects fix */
+  .project-card,
+  .project-card-reverse {
+    grid-template-columns: 1fr !important;
+    padding: 20px;
+    gap: 24px;
+  }
+
+  .project-card-reverse .project-info {
+    order: 1 !important;
+  }
+
+  .project-card-reverse .project-cert {
+    order: 2 !important;
+  }
+
+  .project-number {
+    font-size: 2rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .project-desc {
+    font-size: 0.82rem;
+  }
+
+  /* About fix */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  /* Experience fix */
+  .experience-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Contact fix */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-method-value {
+    font-size: 0.75rem;
+  }
+
+  /* Mini projects fix */
+  .mini-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px;
+  }
+
+  .mini-card {
+    padding: 16px;
+  }
+
+  .mini-title {
+    font-size: 0.85rem;
+  }
+
+  .mini-desc {
+    font-size: 0.72rem;
+  }
+
+  /* Footer fix */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
